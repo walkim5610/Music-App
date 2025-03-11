@@ -1,0 +1,40 @@
+/* Ensure the navbar is always visible */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Background image for home page */
+.hero {
+    background: url('../images/music-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-top: 80px; /* Prevent navbar overlap */
+}
+
+/* Dark overlay effect */
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Button styles */
+.btn {
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
